@@ -8,7 +8,7 @@ exports.onCreatePage = async ({ page, actions }) => {
     if (page.path.match(/^\/Home/)) {
         // page.matchPath is special key that's used for matching Pages
         // with corresponding Routes with only routes
-        page.matchPath = "/Home/*"
+        page.matchPath = "/Home/*"  
 
         // Update the page
         createPage(page)
